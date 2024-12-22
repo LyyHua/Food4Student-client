@@ -21,7 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.ilikeincest.food4student.component.ErrorDialog
 import com.ilikeincest.food4student.screen.restaurant.RestaurantViewModel
-import com.ilikeincest.food4student.screen.restaurant.component.FoodItemCard
+import com.ilikeincest.food4student.screen.restaurant.component.FoodItemMainCard
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -62,7 +62,7 @@ fun RestaurantScreenContent(
                     modifier = Modifier.Companion.fillMaxSize()
                 ) {
                     items(foodItems) { foodItem ->
-                        FoodItemCard(
+                        FoodItemMainCard(
                             foodItem = foodItem,
                             onClick = {
                                 viewModel.setSelectedFoodItem(foodItem)

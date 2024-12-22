@@ -35,7 +35,7 @@ import com.ilikeincest.food4student.screen.main_page.notification.NotificationSc
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun RestaurantScreen(
+fun RestaurantMainScreen(
     viewModel: RestaurantViewModel,
     onNavigateToAddEditFoodItem: () -> Unit,
     navController: NavController,

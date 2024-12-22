@@ -24,7 +24,7 @@ import coil3.compose.AsyncImage
 import com.ilikeincest.food4student.model.FoodItem
 
 @Composable
-fun FoodItemCard(
+fun FoodItemMainCard(
     foodItem: FoodItem,
     onClick: () -> Unit
 ) {

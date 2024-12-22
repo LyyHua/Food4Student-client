@@ -19,7 +19,7 @@ import com.ilikeincest.food4student.screen.account_center.AccountCenterScreen
 import com.ilikeincest.food4student.screen.auth.select_role.SelectRoleRestaurantScreen
 import com.ilikeincest.food4student.screen.auth.select_role.SelectRoleScreen
 import com.ilikeincest.food4student.screen.auth.select_role.SelectRoleUserScreen
-import com.ilikeincest.food4student.screen.restaurant.RestaurantScreen
+import com.ilikeincest.food4student.screen.restaurant.RestaurantMainScreen
 import com.ilikeincest.food4student.screen.auth.sign_in.SignInScreen
 import com.ilikeincest.food4student.screen.auth.sign_up.SignUpScreen
 import com.ilikeincest.food4student.screen.food_item.add_category.AddCategoryScreen
@@ -122,7 +122,7 @@ fun AppNavGraph(navController: NavHostController = rememberNavController()) {
                     navController.getBackStackEntry("RestaurantFlow")
                 }
                 val sharedViewModel = hiltViewModel<RestaurantViewModel>(parentEntry)
-                RestaurantScreen(
+                RestaurantMainScreen(
                     viewModel = sharedViewModel,
                     onNavigateToAddEditFoodItem = { navController.navigate(AppRoutes.AddEditFoodItem) },
                     navController = navController
